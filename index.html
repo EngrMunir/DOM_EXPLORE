@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom explore</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        li{
+            color: tomato;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>My awesome dom</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, repudiandae voluptate? Suscipit vero nostrum quae doloremque repellendus, blanditiis, harum, repudiandae mollitia beatae illo eius quod ducimus est tenetur nam totam!</p>
+        <ul>
+            <li>kalam</li>
+            <li>koli</li>
+            <li>kajol</li>
+        </ul>
+        <section>
+            <h1>Fruits I like</h1>
+
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+                <li>Mango</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Places I like to visit</h2>
+            <ul>
+                <li>Sondarban</li>
+                <li>bandorban</li>
+                <li>katabon</li>
+                <li>Shalbon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="JS/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li);
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }
+    </script>
     
 </body>
 </html>
